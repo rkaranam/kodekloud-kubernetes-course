@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: busybox-rc
+  labels:
+    app: busybox-rc-app
+spec:
+  selector:
+    matchLabels:
+      env: development
+  template:
+    metadata:
+      name: busybox-name
+      labels:
+        env: development
+    spec:
+      containers:
+        - name: busybox-container
+          image: busybox
+  replicas: 4
