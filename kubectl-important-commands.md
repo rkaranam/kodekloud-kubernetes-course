@@ -50,3 +50,8 @@ kubectl rollout status deployment/nginx-deployment
 
 kubectl rollout history deployment/nginx-deployment
 ```
+
+## Services
+```
+minikube service myapp-service --url
+```
