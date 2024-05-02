@@ -55,3 +55,12 @@ kubectl rollout history deployment/nginx-deployment
 ```
 minikube service myapp-service --url
 ```
+
+## Commmon
+```
+# delete all kubernetes components from current namespace
+kubectl delete all --all
+
+# delete all kubernetes components from specific namespace
+kubectl delete all --all -n namespace
+```
